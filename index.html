@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<title>Weather App API Project</title>
+<script src="js/main.js"defer></script>
+</head>
+<body>
+
+<style>
+    img{
+        width:100% ;
+        height:100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+    }
+</style>
+</head>
+<body>
+
+<!-- <div>
+    <img src="../../week-6HW/weather-project/css/images/background_pic.jpg" alt="background">
+</div> -->
+
+<div class="d-flex justify-content-center">
+    <form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="city_input" class="main-sect">City</label>
+            <input type="text" class="form-control" id="city" placeholder="City">
+          </div>
+
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="zipcode_input" class="main-sect">ZipCode</label>
+            <input type="number" class="form-control" id="zipcode" placeholder="Zipcode">
+          </div>
+          <button type="button" class="btn btn-primary" onclick="getJson()">Submit</button>
+      </form>
+    </div>
+
+
+<h1 id="city_output"></h1>
+<h1 id="zip_output"></h1>
+
+<div class="d-flex justify-content-center">
+
+
+<div class="card w-25">
+<div class="text-center">
+    <div class="card bg-light text-dark">
+    <div class="card-body">
+    <h5 class="card-header">High</h5>
+    <div class="card-body">
+      <h5 class="card-title" id="high"></h5>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="card w-25">
+    <div class="text-center">
+    <div class="card bg-light text-dark">
+    <div class="card-body">
+    <h5 class="card-header">Low</h5>
+    <div class="card-body">
+      <h5 class="card-title" id="low"></h5>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="card w-25">
+    <div class="text-center">
+    <div class="card bg-light text-dark">
+    <div class="card-body">
+    <h5 class="card-header">Forecast</h5>
+    <div class="card-body">
+      <h5 class="card-title" id="forecast"></h5>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="card w-25">
+    <div class="text-center">
+    <div class="card bg-light text-dark">
+    <div class="card-body">
+    <h5 class="card-header">Humidity</h5>
+    <div class="card-body">
+      <h5 class="card-title" id="humidity"></h5>
+    </div>
+  </div>
+</div>
+</div> 
+</div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+</html>
